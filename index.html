@@ -4,10 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./static/style.css">
     <title>Donut Clicker</title>
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+  <body>    
+    <div class="container">
+      <header class="header">
+        <!-- <h3 id ="header__logo">Current Donut Count: <span id='donutCount'>xx</span></h3> -->
+        <nav class="header__nav">
+          <ul class="header__nav_list">
+            <li class="header__nav_listItem"><a href=#home>Home</a></li>
+            <li class="header__nav_listItem"><a href=#about>About Fred The Baker</a></li>
+            <li class="header__nav_listItem"><a href=#inspiration>Inspiration for Game</a></li>
+            <li class="header__nav_listItem"><a href=#contact>Contact Info</a></li>
+          </ul>
+        </nav>
+      </header>  
+
+    
+      
+      <!-- <p>Donuts #:  </p>  -->
+    
+      
+      <article class="profile__heading">
+        <img class='homepagePic' src="static/images/kripsy-kreme-gif.gif" title="title" alt="moving picture of donuts being made">
+        <h1>Donut Clicker</h1>
+        <h3>Click the donut clicker button to make a donut.</h3>
+        <p>The more  you click, the more you make.  Be sure to drink plenty of fluids and stretch so you dont strain your finger!!!</p> 
+      </article>  
+      <!-- <display type ="text" id="donutNumber" placeholder="This is the amount of donuts you've created"></display> -->
+      <div id=middleBlock>
+        <section id="projects">
+          <button id="submit">Create a Donut</button>
+          <p id="project_style">Creates a single Donut per click until you Purchase AutoClickers and DonutMultiplers </p>
+          <p id="project_style">[E.G. 1 click creates 1 donut] (Cost: Free)</p>
+          <button  id="buyDonutMultiplier">Purchase Multiplier</button>
+          <p id="project_style">Increase the value of a click by 20% per Multiplier </p> 
+          <p id="project_style">[E.G. 1 click becomes 1.2 clicks] (Cost: 10 donuts)</p>
+          <button  id="buyAutoClicker">Purchase AutoClicker</button>
+          <p id="project_style">Applies an AutoClicker that increases the count of every click by 1 </p>
+          <p id="project_style">[E.G. 1 click becomes 2 clicks] (Cost: 100 Donuts) </p>
+          <button  id="reset">Reset</button>
+          <p id="project_style">This will reset the game</p>
+          
+        </section>
+        <!-- <button id="button" id="submit">Purchase AutoClicker</button> -->
+
+        <section id="stats">
+          <ul>
+          <li class="profile__heading">Current Donut Count: <span id='donutCount'>00</span></li>
+          <li class="profile__heading">Current Donut Multiplier: <span id='donutMultiplier'>1</span></li>
+          <li class="profile__heading">Current Donut Multiplier Cost: <span id='donutMultCost'>10</span></li>
+          <li class="profile__heading">Donut Multiplier Count: <span id='donutMultCount'>00</span></li>
+          <li class="profile__heading">Current AutoClicker Cost: <span id='autoClickerCost'>100</span></li>
+          <li class="profile__heading">AutoClicker Count: <span id='autoClickerCount'>00</span></li>
+         </ul>
+        </section>
+      </div>
+      
+      
+      
+      <!-- <script src="./index.js"></script> -->
+
+      <!-- <div id="myDonuts">
+
+      </div>
+       -->
+       
+    </div>
+  
+    <!-- <button type="button"
+    onclick ="document.getElementByID('demo').innerHTML = Date()">Click me to create a donut</button> -->
+    <!-- <p id="demo"></p> -->
+    <script type="module" src="./donut-maker-app.js"></script>
   </body>
 </html>
