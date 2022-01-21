@@ -11,7 +11,7 @@ class DonutMaker {
         this.autoClickCount=0;
         this.autoClickerCost=100;
         this.donutMultiplier=1;
-        this.donutMultiplierCost=10;
+        this.donutMultCost=10;
         this.donutMultCount=0;
     }
 
@@ -25,14 +25,32 @@ class DonutMaker {
 
     donutMultiplierPurchase(){
         this.donutMultiplier *= 1.2;
-        this.donutMultiplierCost *=1.1;
+    
     }
 
+    donutMultiplierPurchase2(){
+     
+        this.donutMultCost *=1.1;
+    }
+
+    donutMultiplierPurchase3(){
+     
+        this.donutMultCount +=1;
+    }
+
+
     autoClickPurchase(){
-        this.autoClickCount += 1;       
+    
         this.autoClickerCost *= 1.1;                 
-        buyDonutMultiplier
+        // buyDonutMultiplier
    }
+
+   
+   autoClickPurchase2(){
+    this.autoClickCount += 1;       
+    
+    // buyDonutMultiplier
+}
 
     resetStats(){
         location.reload(); //refresh page
