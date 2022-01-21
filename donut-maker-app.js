@@ -7,13 +7,47 @@ const createdDonuts = new DonutMaker();
 renderPage();
 
 function renderPage() {
+    homeBtn();
+    aboutBtn();
+    inspirationBtn();
+    contactBtn;
     addADonut();
     addADonutMult();
     addADonutClicker();    
     reset();
 }
 
+function homeBtn(){
+    const homeBtn = document.querySelector('#home');
+    homeBtn.addEventListener('click', () => {
+        console.log('firing');
+        createdDonuts.resetStats();
+    });
+    
+}
 
+function aboutBtn(){
+    const aboutBtn = document.querySelector('#about');
+    aboutBtn.addEventListener('click', () => {
+       alert('Fred began his journey in creating donuts when he was 12.  His mother \nwas a doughnut lover and took him to all the best pastry shops in town.  When Fred was 15 he began an apprenticeship at the \nneighbors pastry shop where he found a love for doughnuts. \nWhen he turned 20, Fred opened up shop and has been selling \never since (1948)! ') ;
+    });
+}
+
+
+function inspirationBtn(){
+    const inspirationBtn = document.querySelector('#inspiration');
+    inspirationBtn.addEventListener('click', ()=>{
+        window.open("http://orteil.dashnet.org/cookieclicker/", "_blank");    
+    });
+    
+}
+
+function contactBtn(){
+    const contactBtn = document.querySelector('#contact');
+    contactBtn.addEventListener('click', () => {
+       alert('enter info here'); 
+    });   
+}
 
 function addADonut() {
     const makeDonutBtn = document.querySelector('#submit');
@@ -30,9 +64,9 @@ function addADonutMult(){
     const donutMultDisplay2 = document.querySelector('#donutMultCost');
     const donutMultDisplay3 = document.querySelector('#donutMultCount');
     buyDonutMultiplierBtn.addEventListener('click', () => {
-        if (createdDonuts.donutNumber<=9){
+        if (donutDisplay.innerHTML<=9 || donutDisplay.innerText<=createdDonuts.donutMultCost){
             console.log("you don't have enough donuts");
-            alert('not enough donuts, need 10')
+            alert('not enough donuts, check current donut multipler cost')
         }
         else{
         console.log('firing');
@@ -61,9 +95,9 @@ function addADonutClicker(){
         const donutDisplay = document.querySelector('#donutCount');
         
         buyAutoClickerBtn.addEventListener('click', () => {
-            if (createdDonuts.donutNumber<=99){
+            if (donutDisplay.innerText<=99 || donutDisplay.innerText<=createdDonuts.autoClickerCost ){
                 console.log("you don't have enough donuts");
-                alert('not enough donuts, need 100')
+                alert('not enough donuts, check current AutoClicker cost')
             }
             else{
             console.log('firing');
@@ -97,4 +131,8 @@ function reset(){
         console.log('firing');
         createdDonuts.resetStats();
     });
+
+    
 }
+
+
