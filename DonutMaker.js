@@ -16,7 +16,7 @@ class DonutMaker {
     }
 
     createDonuts(){
-        this.donutNumber += 1*this.donutMultiplier;
+        this.donutNumber += 1;
     }
 
     // autoClick(){
@@ -50,15 +50,7 @@ class DonutMaker {
     this.autoClickCount += 1;       
     
     // buyDonutMultiplier
-   }
-
-   chargeForDonutMult(){
-    this.donutNumber = this.donutNumber-10;
 }
-
-   chargeForAutoClick(){
-       this.donutNumber = this.donutNumber-100;
-   }
 
     resetStats(){
         location.reload(); //refresh page
