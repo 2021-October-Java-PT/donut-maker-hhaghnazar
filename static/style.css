@@ -42,13 +42,30 @@ a {
 
 .header__nav_list {
     display: flex;
+    text-align:center;
 }
 
-.header__nav_listItem {
+.header__nav_listItem1 {
     list-style-type: none;
     margin: 1rem;
-
 }
+
+.header__nav_listItem2 {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.header__nav_listItem3 {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.header__nav_listItem4 {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+
 
 .profile__list {
     display: flex;
@@ -242,6 +259,7 @@ a {
 .footer__social {
     margin: center;
 }
+
 
 
 @media only screen and (max-width: 850px) {

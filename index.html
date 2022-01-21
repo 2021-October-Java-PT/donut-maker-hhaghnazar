@@ -3,41 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <link rel="stylesheet" href="./static/style.css">
     <title>Donut Clicker</title>
   </head>
   <body>    
     <div class="container">
-      <header class="header">
-        <!-- <h3 id ="header__logo">Current Donut Count: <span id='donutCount'>xx</span></h3> -->
+      <header class="header">        
         <nav class="header__nav">
-          <ul class="header__nav_list">
-            <li class="header__nav_listItem"><a href=index.html>Home</a></li>
-            <li class="header__nav_listItem"><a href=#about>About Fred The Baker</a></li>
-            <li class="header__nav_listItem"><a href=#inspiration>Inspiration for Game</a></li>
-            <li class="header__nav_listItem"><a href=#contact>Contact Info</a></li>
+          <ul class="header__nav_list">            
+            <section class="header__nav_listItem">
+            <button class="header__nav_listItem1" id="home">Home</button>
+            <button class="header__nav_listItem2" id="about">About Fred The Baker</button>
+            <button class="header__nav_listItem3" id="inspiration">Inspiration for Game</button>
+            <button class="header__nav_listItem4" id="contact">Contact Info</button>
+            <!-- <div id="myModal" class="modal"> 
+              <div class="modal-content"><span class="close">$times;</span>
+                <p> some modal text...</p>
+
+            </div>
+            </div> -->
+          </section>
           </ul>
         </nav>
       </header>  
-
-    
-      
-      <!-- <p>Donuts #:  </p>  -->
-    
-      <!-- <article>
-        <div class="homepagePic">
-          <img  src="static/images/kripsy-kreme-gif.gif" title="title" alt="moving picture of donuts being made">
-          </div>
-  
-      </article>       -->
       <article class="profile__heading">
         <h1>Donut Clicker</h1>
         <h3>Click the donut clicker button to make a donut.</h3>
         <p>The more  you click, the more you make.  Be sure to drink plenty of fluids and stretch so you dont strain your finger!!!</p> 
-      </article>  
-      <!-- <display type ="text" id="donutNumber" placeholder="This is the amount of donuts you've created"></display> -->
+      </article>        
       <div id=middleBlock>
         <section id="projects">
           <button id="submit">Create a Donut</button>
@@ -51,10 +45,7 @@
           <p id="project_style">[E.G. 2 AutoClickers will click for you 2 times per second] (Cost: 100 Donuts) </p>
           <button  id="reset">Reset</button>
           <p id="project_style">This will reset the game</p>
-          
         </section>
-        <!-- <button id="button" id="submit">Purchase AutoClicker</button> -->
-
         <section id="stats">
           <ul>
           <li class="profile__heading">Current Donut Count: <span id='donutCount'>00</span></li>
@@ -66,21 +57,7 @@
          </ul>
         </section>
       </div>
-      
-      
-      
-      <!-- <script src="./index.js"></script> -->
-
-      <!-- <div id="myDonuts">
-
-      </div>
-       -->
-       
     </div>
-  
-    <!-- <button type="button"
-    onclick ="document.getElementByID('demo').innerHTML = Date()">Click me to create a donut</button> -->
-    <!-- <p id="demo"></p> -->
     <script type="module" src="./donut-maker-app.js"></script>
   </body>
 </html>
